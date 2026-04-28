@@ -1,73 +1,28 @@
-# React + TypeScript + Vite
+# FitAI Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A futuristic, minimal, and premium-looking interface for the FitAI application, built using React, Vite, Tailwind CSS, and Framer Motion. 
 
-Currently, two official plugins are available:
+This frontend is designed to provide a high-end AI SaaS experience with smooth micro-animations, glassmorphism effects, and a highly interactive user dashboard.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+- **Framework**: React 19 + TypeScript + Vite
+- **Styling**: Tailwind CSS for rapid utility-based styling and custom aesthetics.
+- **Animations**: Framer Motion for scroll hijacking, glowing gradients, and dynamic page transitions.
+- **Icons**: Lucide React.
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+2. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+   This will start the application locally using Vite. Access the application on `http://localhost:5173`.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Features
+- **Onboarding Experience**: Scroll-hijacked onboarding with interactive step cards detailing the account setup, fitness tracking, and dietary planning.
+- **Dynamic Dashboards**: Premium glassmorphism effects, glowing active tracking indicators, and real-time visualization mockups.
+- **Modern Aesthetic**: Deep space colors complemented by vivid glowing accents (e.g. `#00F5A0`, `#00c8ff`).
